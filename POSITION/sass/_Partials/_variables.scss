@@ -1,0 +1,158 @@
+@mixin reset {
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+}
+// #{$-font-family};interpolation
+$font-path: "/fonts/Roboto";
+$font-pathh: "/fonts/CrimsonText-Woff2";
+$imgpath: "/img/icons8-star-100.png";
+// $font-weight: (
+//   "regular": 400,
+//   "medium": 500,
+//   "bold": 600
+// );
+@font-face {
+  font-family: "Roboto-Random";
+  src: url("#{$font-path}/Roboto-Italic.ttf") format("ttf");
+  src:
+    local("Roboto"),
+    url("#{$font-path}/Roboto-ThinItalic.ttf") format("ttf");
+  // font-weight: 400 500;
+  // font-weight: normal bold;
+  src: local("Crimson"), url(/fonts/CrimsonText-Woff2/CrimsonText-Italic.woff2),
+    url(/fonts/QuicksandTTf/Quicksand-Light.ttf);
+}
+@font-face {
+  font-family: "fon";
+  src: url (#{$font-pathh} + "/CrimsonText-BoldItalic.woff2") format("woff2");
+  src: url(/fonts/CrimsonText-Woff2/CrimsonText-Italic.woff2) format("woff2");
+}
+// @font-face {
+//   font-family: "crimson";rule correct
+//   src: url(/fonts/CrimsonText-Woff2/CrimsonText-Italic.woff2) format("woff2");
+//   src: url(#{$font-pathh}/CrimsonText-Italic.woff2) format("woff2");
+// }
+
+$content-width: 1234px;
+$-private-color: red !default;
+$modules: 55px;
+$-font-family: roboto;
+$folder-path-project: "../../Desktop";
+$fonts-family: "../fonts";
+h1 {
+  // display: flex;
+  width: $content-width + 23px;
+  color: rgb(244, 241, 237);
+  font-size: 3em;
+  // align-items: end;
+  text-align: center;
+  justify-content: flex-end;
+  margin: auto;
+  background: -o-repeating-linear-gradient();
+  span.text1 {
+    color: greenyellow;
+  }
+  .ore {
+    color: rgb(244, 149, 149);
+    opacity: 0.8;
+    font-style: normal;
+    font-size: 4rem;
+    background: url(/img/smartphone-ga1ad40a3a_640.png) no-repeat;
+    background: url($imgpath) no-repeat;
+  }
+}
+
+// :root {
+//   --flex-theme: {
+//     border: 1px solid var(--theme-dark-blue);
+//     font-family: var(--theme-font-family);
+//     padding: var(--theme-wide-padding);
+//     background-color: var(--theme-light-blue);
+//   };
+// }

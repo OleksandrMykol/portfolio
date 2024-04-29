@@ -1,0 +1,33 @@
+$root-Var: 444px;
+$color-black: #31e82ee9;
+$bgfoter: black;
+
+.footer_a {
+  margin: min(22em, 2%, 44em) 5vw 49px 22vw;
+  color: rgba(86, 214, 146, 0.524);
+  font-size: 55px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  text-wrap: wrap;
+  min-width: $root-Var;
+  background: $bgfoter;
+}
+.footer_b {
+  $root-Var: 155px;
+  min-width: $root-Var;
+  font-size: 53px;
+  // @extend %-private;
+  color: $color-black;
+  background: $bgfoter;
+}
+
+%private {
+  width: 777px;
+  color: red;
+}
+
+// %-private {
+//   width: 777px;
+//   color: red;
+// }

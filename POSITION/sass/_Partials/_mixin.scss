@@ -1,0 +1,58 @@
+.footer_m {
+  margin: min(22em, 20%, 44em) 5vw 49px 90px;
+  color: rgba(165, 238, 164, 0.878);
+  font-size: 44px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-overflow: ellipsis;
+  text-transform: lowercase;
+  text-wrap: wrap;
+}
+@mixin var-color($argumentColor, $argumentBorder) {
+  background: $argumentColor;
+  border: $argumentBorder;
+}
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1em dashed rgba(227, 208, 234, 0.842);
+}
+.card {
+  @include var-color(rgb(0, 255, 21), 5px solid);
+}
+// @use 'module';
+// ? MIXIN-TEMPLATE
+
+@mixin nameOut() {
+  width: 101px;
+}
+
+ %mixtab {
+  @include nameOut();
+  display: block;
+  min-width: 334px;
+  height: 445px;
+  border: 3px dashed red;
+}
+.mixin-template {
+  // @extend %mixtab;
+  border-radius: 22px;
+  height: 400px;
+  width: 300px;
+}
+
+// @mixin connectMixin {
+//   @include reset-list;
+//   .footer_includes{
+//     font-size: 33px;
+//   }
+// }
+// @mixin text-size{
+//   font-size: 55px;
+//   text-transform: uppercase;
+//   text-decoration-style: double;
+//   vertical-align: text-top;
+//   mix-blend-mode: luminosity;
+//   letter-spacing: 4px;
+//   word-spacing: 3px;
+// }
