@@ -167,8 +167,8 @@ html {
 .container_main .section_title {
   margin: var(--container-main);
   border: var(--border-dashed);
-  /* justify-content: center; */
-  /* display: flex; */
+  justify-content: center;
+  display: flex;
   /* padding: 25px 50vh; При адаптиві не дозволяють Гортання блоку, гуму */
 }
 
@@ -177,6 +177,9 @@ html {
   display: block;
   padding: 5px 0;
 }
-.num0{
-  width: 25px;
+
+.all_projects {
+  display: flex;
+  justify-content: space-between;
+  /* width: 25px; */
 }
