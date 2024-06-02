@@ -184,14 +184,22 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 70px;
+  column-gap: 30px;
+  row-gap: 70px;
+}
+
+.one_project .num0 {
+  width: 200px;
+  height: 190px;
+  background: #eee4e4e4;
+  border: var(--border-doted);
 }
 
 .one_project {
-  width: 200px;
-  height: 190px;
-
+  border: var(--border-solid);
+  background: #000;
 }
-.image-title{
+
+.image-title {
   text-align: left;
 }
