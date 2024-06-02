@@ -164,11 +164,12 @@ html {
 }
 
 /* Projects */
-.container_main .section_title {
+.container_main {
   margin: var(--container-main);
   border: var(--border-dashed);
-  justify-content: center;
   display: flex;
+  text-align: center;
+  justify-content: center;
   /* padding: 25px 50vh; При адаптиві не дозволяють Гортання блоку, гуму */
 }
 
@@ -179,7 +180,18 @@ html {
 }
 
 .all_projects {
+  margin: 0 300px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  /* width: 25px; */
+  column-gap: 70px;
+}
+
+.one_project {
+  width: 200px;
+  height: 190px;
+
+}
+.image-title{
+  text-align: left;
 }
