@@ -137,7 +137,7 @@ html {
 .header_subtitle {
   border: var(--border-doted);
 }
-
+/* unvisited, visited, hover, and active links:<a/> */
 .btn {
   display: inline-block;
   text-align: start;
@@ -164,9 +164,10 @@ html {
 }
 
 /* Projects */
-.section{
+.section {
   border: var(--border-doted);
 }
+
 .container_main {
   margin: var(--container-main);
   border: var(--border-dashed);
@@ -206,4 +207,15 @@ html {
   text-align: right;
   font-style: italic;
   font-weight: 100;
+  font-size: 26px;
+}
+.one_project:hover{
+  background: #ddcbcb;
+  font-weight: 900;
+}
+.image-title {
+  padding-right: 10px;
+  color: #2f3759;
+  /* background: #6d4949; */
+  /* border-radius: 3px; */
 }
