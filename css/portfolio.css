@@ -164,6 +164,9 @@ html {
 }
 
 /* Projects */
+.section{
+  border: var(--border-doted);
+}
 .container_main {
   margin: var(--container-main);
   border: var(--border-dashed);
@@ -197,9 +200,10 @@ html {
 
 .one_project {
   border: var(--border-solid);
-  background: #000;
-}
-
-.image-title {
-  text-align: left;
+  background: #74f30c;
+  box-shadow: 0px 1px 4px 3px rgb(116 116 242);
+  border-radius: 2px 2px 2px 25px;
+  text-align: right;
+  font-style: italic;
+  font-weight: 100;
 }
