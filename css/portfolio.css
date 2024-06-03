@@ -137,6 +137,7 @@ html {
 .header_subtitle {
   border: var(--border-doted);
 }
+
 /* unvisited, visited, hover, and active links:<a/> */
 .btn {
   display: inline-block;
@@ -213,18 +214,34 @@ html {
   font-weight: 100;
   font-size: 26px;
 }
-.one_project:hover{
+
+.one_project:hover {
   background: #ddcbcb;
   font-weight: 900;
 }
+
 .image-title {
   padding-right: 10px;
   color: #2f3759;
   /* background: #6d4949; */
   /* border-radius: 3px; */
 }
-.footer{
+
+.footer {
   margin: 0 55px;
   text-align: center;
   padding-bottom: 25px;
+  border: var(--border-doted);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social_item:hover{
+  background: #000;
+  /* ///size: 333px; */
+}
+.social_img:hover {
+  background: #d5b2b2;
 }
