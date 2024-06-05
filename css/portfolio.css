@@ -269,8 +269,12 @@ html {
 
 .logo {
   display: inline-block;
+  position: fixed;
+  top: 30px;
+  left: 30px;
 }
-.caption{
+
+.caption {
   font-weight: 900;
   font-size: 55px;
   font-family: serif;
@@ -282,6 +286,7 @@ html {
   justify-content: center;
   /* justify-content: flex-start; */
 }
+
 .btn {}
 
 .section {
@@ -294,4 +299,9 @@ html {
   max-width: 850px;
 }
 
-.section_title {}
+.section_title {
+  text-align: start;
+  text-wrap: balance;
+  text-shadow: 1px -40px blanchedalmond;
+  text-transform: capitalize;
+}
