@@ -39,7 +39,7 @@ html {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   border: 1px dashed blue;
   margin: 25px 25px;
@@ -193,7 +193,7 @@ html {
 }
 
 .all_projects {
-  margin: 0 300px;
+  margin: 0 1vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
