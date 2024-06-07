@@ -183,6 +183,7 @@ html {
   justify-content: center;
   min-width: 320px;
   padding-bottom: 25px;
+  background: url();
   /* padding: 25px 50vh; При адаптиві не дозволяють Гортання блоку, гуму */
   /* max-width: 320px; */
 }
@@ -309,4 +310,35 @@ html {
   text-wrap: balance;
   text-shadow: 1px -40px blanchedalmond;
   text-transform: capitalize;
+}
+
+/* ADAPTIVE | responsive */
+/* Extra small devices (phones, 600px and down) */
+/*? @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* ?@media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* ?@media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* ?@media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* ?@media only screen and (min-width: 1200px) {...} */
+
+@media (max-width:500px) {
+  .caption {
+    width: 111px;
+    height: 222px;
+  }
+
+  .project_title {
+    font-size: 11px;
+    color: #000;
+  }
+}
+@media screen {
+  
 }
