@@ -59,6 +59,7 @@ html {
   border: 1px dotted rgb(151, 151, 247);
   margin-right: 44px;
   padding: 0 10px;
+  flex-wrap: wrap;
 }
 
 .nav-list_item {
