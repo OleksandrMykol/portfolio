@@ -330,8 +330,12 @@ html {
 
 @media (max-width:500px) {
   .caption {
-    width: 111px;
-    height: 222px;
+    background: #000;
+    font-style: normal;
+    font-size: 11px;
+    color:white;
+    height: 10vh;
+    line-height: 10vh;
   }
 
   .project_title {
