@@ -144,7 +144,7 @@ html {
 }
 
 /* unvisited, visited, hover, and active links:<a/> */
-.btn {
+.btn .over {
   display: inline-block;
   text-align: start;
   border: var(--border-dashed);
@@ -169,10 +169,15 @@ html {
   position: relative;
 }
 
+.git {
+  padding: 1px 10px 5px 3px;
+}
+
 /* Projects */
 .section {
   border: var(--border-doted);
   padding-bottom: 25px;
+  margin: 0 10vw;
 }
 
 .container_main {
@@ -183,7 +188,11 @@ html {
   justify-content: center;
   min-width: 320px;
   padding-bottom: 25px;
-  background: url();
+  background: url(/img/fish-8265114_640.jpg)no-repeat;
+  background-position: center;
+  /* background-position: 0 0; */
+  /* background-position-x: 11em; */
+  /* background-position-y: 11em; */
   /* padding: 25px 50vh; При адаптиві не дозволяють Гортання блоку, гуму */
   /* max-width: 320px; */
 }
@@ -276,6 +285,11 @@ html {
   top: 30px;
   left: 30px;
   z-index: 1;
+  overflow: auto;
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  /* overflow: visible; */
+  height: 5em;
 }
 
 .caption {
@@ -303,6 +317,7 @@ html {
 .section_img {
   position: relative;
   /* max-width: 850px; */
+  z-index: -1;
 }
 
 .section_title {
@@ -310,6 +325,7 @@ html {
   text-wrap: balance;
   text-shadow: 1px -40px blanchedalmond;
   text-transform: capitalize;
+  padding-left: 25px;
 }
 
 /* ADAPTIVE | responsive */
@@ -332,10 +348,10 @@ html {
   .caption {
     background: #000;
     font-style: normal;
-    font-size: 11px;
-    color:white;
-    height: 10vh;
-    line-height: 10vh;
+    font-size: 50px;
+    color: white;
+    height: 20vh;
+    line-height: 20vh;
   }
 
   .project_title {
@@ -343,6 +359,10 @@ html {
     color: #000;
   }
 }
-@media screen {
-  
+
+@media (max-width:375px) {
+  .logo {
+    margin-top: 155px;
+    color: #17e409;
+  }
 }
