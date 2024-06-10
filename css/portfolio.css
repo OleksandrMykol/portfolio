@@ -30,7 +30,7 @@
 
 .body,
 html {
-  /* background: #2d252598; */
+  background: beige;
   color: rgb(175, 34, 43);
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
@@ -344,6 +344,10 @@ html {
 }
 
 /* ?SKILS */
+.header {
+  /* height: calc(100vh - 20vh); */
+}
+
 .container_skils {
   margin: auto 25px;
   border: var(--border-dashed);
