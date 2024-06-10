@@ -385,6 +385,7 @@ html {
   height: 100vh;
   /*//// opacity: .5; */
   position: relative;
+  /* isolation: isolate; */
 }
 
 .container_opacity::before {
@@ -400,6 +401,15 @@ html {
   inset: 0px 0px 0px 0px;
   z-index: -1;
   /* inset: 135px; distance on parent to child element */
+}
+
+.container_opacity::before {
+  content: "";
+  background-color: #1a1818;
+  /* position: relative; */
+  position: absolute;
+  z-index: -3;
+  opacity: .7
 }
 
 .text_opasity {
