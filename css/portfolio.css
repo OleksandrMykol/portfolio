@@ -380,24 +380,23 @@ html {
 
 /* ?CONTACTS */
 .container_opacity {
-  /* background: url(/img/fish-8265114_640.jpg)no-repeat; */
+  background: url(/img/fish-8265114_640.jpg)no-repeat;
   background-position: center;
   height: 100vh;
-  /* opacity: .5; */
+  /*//// opacity: .5; */
   position: relative;
 }
 
 .container_opacity::before {
   content: "";
   position: absolute;
-  background: url(/img/fish-8265114_640.jpg)no-repeat;
+  background: url(/img/fish-8265114_1280.jpg)no-repeat;
+  background-size: contain;
   background-position: center;
   border: var(--border-dashed);
-  opacity: .5;
   opacity: 0.5;
-  /* margin: 234px; */
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
 }
 
 .text_opasity {
@@ -406,6 +405,27 @@ html {
   color: rgb(5, 33, 58);
   /* position: absolute; */
   /* ///text-align: calc(); */
+}
+
+span {
+  color: wheat;
+}
+
+.list_contacts {
+  margin: 0 33.3%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  color: #17e409;
+
+}
+
+.box_items {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 0px 25px;
+  padding: 50px 0 0;
 }
 
 /* ADAPTIVE | responsive */
