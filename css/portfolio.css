@@ -397,6 +397,9 @@ html {
   opacity: 0.5;
   height: 100vh;
   width: 100vw;
+  inset: 0px 0px 0px 0px;
+  z-index: -1;
+  /* inset: 135px; distance on parent to child element */
 }
 
 .text_opasity {
