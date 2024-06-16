@@ -44,6 +44,7 @@ html {
   letter-spacing: -0.5px;
   min-height: 100vh;
   min-height: 100lvh;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 body.dark-mode {
@@ -289,11 +290,25 @@ body.dark-mode {
 }
 
 .footer {
+  /* background: #5b31c346; */
   margin: 0 55px;
   text-align: center;
   padding-bottom: 25px;
   border: var(--border-doted);
+  position: sticky;
 }
+/* 
+.footer::before {
+  background: #062cea;
+  content: '';
+  position: absolute;
+  opacity: .25;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, 0%);
+  border: var(--border-solid);
+  z-index: -1;
+} */
 
 .social {
   display: flex;
@@ -388,23 +403,27 @@ body.dark-mode {
   background-position: 50% 50%;
   text-align: center;
   position: relative;
-  color: rgb(250, 143, 104);
+  color: rgb(108, 17, 236);
   /* filter: blur(0.9px); */
 }
 
 .container_skils::before {
   background: url(/img/fish-8265114_1280.jpg)no-repeat;
+  background-position: center;
   content: '';
   position: absolute;
   opacity: .5;
   width: 100%;
   height: 100%;
+  transform: translate(-50%, 0%);
+  border: var(--border-solid);
+  z-index: -1;
 }
 
 .template {
-  position: absolute;
+  /* position: absolute; */
   /* transform: translate(-50%, -50%); */
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .skils_title {
@@ -413,6 +432,12 @@ body.dark-mode {
   font-size: 34px;
   font-family: serif;
   letter-spacing: 10px;
+}
+
+.skils_list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 /* ?CONTACTS */
@@ -516,6 +541,14 @@ span {
     padding: 0px 2px 2px 18px;
     color: #17e409;
   }
+}
+
+/* codeiumtest.css */
+
+/* Step counter */
+.counter {
+  margin: var(--container);
+  text-align: center;
 }
 
 #step-counter {
