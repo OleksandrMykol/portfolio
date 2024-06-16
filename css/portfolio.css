@@ -525,11 +525,22 @@ li+.num {
   border: var(--border-solid);
 }
 
+li.num:last-child {
+  border: 1px dashed;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
 /* li.num {
   border: var(--border-solid);
 } */
 .num {
-  margin: 0px auto;
+  margin: auto 0px;
+}
+
+.box_items-img {
+  border: 1px solid rgb(148, 7, 236);
 }
 
 /* ADAPTIVE | responsive */
